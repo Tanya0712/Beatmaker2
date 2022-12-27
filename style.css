@@ -8,6 +8,7 @@
 } */
 body{
     font-family: sans-serif;
+    margin-top: 1rem;
 }
 i,svg{
     pointer-events: none;
