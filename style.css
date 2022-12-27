@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* h1{
+    font-size: medium;
+} */
+body{
+    font-family: sans-serif;
+}
+i,svg{
+    pointer-events: none;
+}
+
+.kick-pad, .snare-pad, .hihat-pad{
+    width: 3rem;
+    height: 3rem;
+    margin: 0rem 0.5rem;
+    cursor: pointer;
+    background-color: black;
+}
+
+.kick-pad{
+    background: rgb(154, 219, 234);
+}
+
+.snare-pad{
+    background: rgb(249, 146, 243);
+}
+
+.hihat-pad{
+    background: rgb(253, 154, 155);
+}
+
+.kick-pad.active{
+    background: rgb(24, 194, 232);
+}
+
+.snare-pad.active{
+    background: rgb(234, 25, 223);
+}
+
+.hihat-pad.active{
+    background: rgb(255, 69, 72);
+}
+
+.sequencer {
+    display: flex;
+    max-height: 100vh;
+    min-height: 90vh;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.kick-track, .snare-track, .hihat-track{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.kick, .snare, .hihat{
+    display: flex;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin: 0 2rem;
+}
+
+.controls button{
+    padding: 0.5rem;
+    border: none;
+    background: rgb(85, 85, 85);
+    color:aliceblue;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.pad{
+    transition: all 0.5s ease;
+}
+
+.play{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background: rgb(85, 85, 85);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+select{
+    padding: 1rem;
+    font-size: 1rem;
+    
+}
+
+.mute.active{
+    background: rgb(182, 182, 182);
+}
+
+.tempo{
+    margin: 3rem;
+    width: 30%;
+}
+.tempo-slider{
+    padding: 0.175rem;
+    -webkit-appearance: none;
+    margin: 1rem 0rem;
+    width: 100%;
+    position: relative;
+    background: rgb(88,88,88);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.tempo p{
+    font-size: 1.5rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+@keyframes playTrack{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+
